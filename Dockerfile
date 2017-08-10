@@ -22,7 +22,6 @@ ENV PHP_LDFLAGS="-Wl,-O1 -Wl,--hash-style=both -pie"
 
 # 创建用户
 RUN set -xe \
-    && echo "http://mirrors.aliyun.com/alpine/v3.4/main/" > /etc/apk/repositories \
     && addgroup -S www \
     && adduser -D -S -G www www
 
