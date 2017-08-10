@@ -129,6 +129,8 @@ RUN set -xe \
                --enable-zip \
                --with-xpm-dir \
                --enable-exif \
+               --with-mysql=mysqlnd \
+               --with-mysqli=mysqlnd \
                --enable-mysqlnd \
                --with-pdo-mysql=mysqlnd \
                --with-openssl \
