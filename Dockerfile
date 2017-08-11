@@ -10,6 +10,8 @@ ENV PHP_URL="https://secure.php.net/get/php-7.1.8.tar.xz/from/this/mirror"
 ENV PHP_ASC_URL="https://secure.php.net/get/php-7.1.8.tar.xz.asc/from/this/mirror"
 ENV PHP_SHA256="8943858738604acb33ecedb865d6c4051eeffe4e2d06f3a3c8f794daccaa2aab"
 
+ENV PHP_INI_DIR /usr/local/etc/
+
 # Apply stack smash protection to functions using local buffers and alloca()
 # Make PHP's main executable position-independent (improves ASLR security mechanism, and has no performance impact on x86_64)
 # Enable optimization (-O2)
